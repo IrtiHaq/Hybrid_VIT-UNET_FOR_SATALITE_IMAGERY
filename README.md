@@ -13,7 +13,7 @@ Link: [A benchmark GaoFen-7 dataset for building extraction from satellite image
 
 **Model** : TransUNet
 
-This model is a specialized adaptation of the TransUNet architecture, originally developed by Chen et al. (2021) for medical image segmentation. Here, its application has been applied for building segmentation from satellite imagery.
+This model is a specialized adaptation of the TransUNet architecture, originally developed by Chen et al. (2021) for medical image segmentation. Here, it has been applied for building segmentation from satellite imagery.
 
 The Model is a Hybrid ViT + U-Net Model that uses a Vision Transformer as its Encoder and a U-Net Style Model as its Decoder. More specifically, the model uses a CNN network (ResNet) and transformer blocks as the encoder and up-sampling layers as the decoder to achieve the task. Inspired by a U-Net Structure, Trans-UNet uses the residual network to extract features and perform down-sampling. The results are then fed into a transformer to encode. Afterwards, up-sampling is used to decode the information. The model uses a pre-trained Vision Transformer, specifically in this project, the [ResNet-50 Vit-B 16 ](https://github.com/google-research/vision_transformer) from Google Research's Vision Transformer implementation is used. 
 
