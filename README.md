@@ -1,7 +1,7 @@
 # Hybrid ViT - U-Net For Building Segmentation From Satellite Imagery
 **By Irti Haq, Youngkyu Ko, Xunan Li**
 
-[Link to Main Notebook](https://htmlpreview.github.io/?https://github.com/IrtiHaq/Hybrid_VIT-UNET_FOR_SATALITE_IMAGERY/blob/main/Final%20Project%20Model%20v9%20-%20Augmented.html)
+📓 [Main Notebook Link](https://htmlpreview.github.io/?https://github.com/IrtiHaq/Hybrid_VIT-UNET_FOR_SATALITE_IMAGERY/blob/main/Final%20Project%20Model%20v9%20-%20Augmented.html)  |  📘 [Final Project Report Link](https://github.com/IrtiHaq/Hybrid_VIT-UNET_FOR_SATALITE_IMAGERY/blob/main/Hybrid%20ViT%20U-Net%20for%20Building%20Segmentation%20Report.pdf) |  📽️ [Final Project Presentation Link](https://1drv.ms/p/c/6d1214622165c4b1/ESxCLNTZyK9BsPBmVCYB6icBpalygjJaC8z5NNOMVMfUCw?e=7snUoR)
 
 **Research Questions:** Can a Hybrid ViT + U-Net model achieve high segmentation accuracy (Dice score) and low boundary error (HD95) when segmenting buildings from satellite imagery across diverse urban areas with varying geographic and urban/architectural characteristics?
 
