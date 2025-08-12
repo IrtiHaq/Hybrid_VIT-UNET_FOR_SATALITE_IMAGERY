@@ -1,6 +1,8 @@
 # Hybrid ViT - U-Net For Building Segmentation From Satellite Imagery
 **By Irti Haq, Youngkyu Ko, Xunan Li**
 
+[Link to Main Notebook](https://htmlpreview.github.io/?https://github.com/IrtiHaq/Hybrid_VIT-UNET_FOR_SATALITE_IMAGERY/blob/main/Final%20Project%20Model%20v9%20-%20Augmented.html)
+
 **Research Questions:** Can a Hybrid ViT + U-Net model achieve high segmentation accuracy (Dice score) and low boundary error (HD95) when segmenting buildings from satellite imagery across diverse urban areas with varying geographic and urban/architectural characteristics?
 
 **Dataset: Chinese GaoFen-7 (GF-7) satellite imagery** 
@@ -28,3 +30,4 @@ Overall These are some of the Key Changes I have made to the models Architeture 
 3) Introduced data augmentation using the Albumentations library. Initially applied a stronger set of transformations, but this led to worsened performance. The augmentations were then progressively simplified, ultimately leaving only mild geometric transforms (horizontal/vertical flips and 90° rotations) to improve model generalization and test performance.
 
 4) Optimized various training parameters, including batch size, learning rate, number of skip connections, and number of training epochs.
+
