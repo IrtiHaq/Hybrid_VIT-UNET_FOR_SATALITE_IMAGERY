@@ -15,14 +15,14 @@ Link: [A benchmark GaoFen-7 dataset for building extraction from satellite image
 
 This model is a specialized adaptation of the TransUNet architecture, originally developed by Chen et al. (2021) for medical image segmentation. Here, its application has been applied for building segmentation from satellite imagery.
 
-The Model is a Hybrid ViT + U-Net Model that uses a Vision Transformer as its Encoder and a U-Net Style Model as its Decoder. More specifically the model uses a CNN network (ResNet) and transformer blocks as the encoder and up sampling layers as the decoder to achieve the task. Inspired by a U-Net Structure, Trans-UNet uses the residual network to extract features and do down samplings. The results are then fed into a transformer to encode. Afterwards, up sampling is used to decode the information. The model uses a Pre trained Vision Transformer, specifically in this project, the [ResNet-50 Vit-B 16 ](https://github.com/google-research/vision_transformer) from Google Research's Vision Transformer implementation is used. 
+The Model is a Hybrid ViT + U-Net Model that uses a Vision Transformer as its Encoder and a U-Net Style Model as its Decoder. More specifically, the model uses a CNN network (ResNet) and transformer blocks as the encoder and up-sampling layers as the decoder to achieve the task. Inspired by a U-Net Structure, Trans-UNet uses the residual network to extract features and perform down-sampling. The results are then fed into a transformer to encode. Afterwards, up-sampling is used to decode the information. The model uses a pre-trained Vision Transformer, specifically in this project, the [ResNet-50 Vit-B 16 ](https://github.com/google-research/vision_transformer) from Google Research's Vision Transformer implementation is used. 
 
-Most of the Code and Architecture for the Model has been directly taken from the TransUNet project by Chen et al. (2021) and then adapted to be used for building Segmentation.  
+Most of the Code and Architecture for the Model have been directly taken from the TransUNet project by Chen et al. (2021) and then adapted to be used for Building Segmentation.  
 
 ##### **Source:** [TransUNet: Medical Image Segmentation](https://tianjinteda.github.io/Transunet.html)  & [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306#page=5.23)
 
 ### Key Changes
-Overall These are some of the Key Changes I have made to the models Architeture to improve perfomance for Building Segmentation from Satalite Imagery. 
+Overall, these are some of the Key Changes I have made to the model's architecture to improve performance for Building Segmentation from satellite imagery. 
 1) The model optimizer was progressively changed from SGD with Momentum → Adam → AdamW → AdamW with AMSGrad. These changes significantly improved training speed, and adding AMSGrad in particular helped enhance convergence
 
 2) The original use of polynomial learning rate decay led to inconsistent convergence behavior and slower training progress, particularly in the early epochs. To address this, I implemented CosineAnnealingWarmRestarts, which provided smoother and more adaptive learning rate scheduling. This change resulted in faster convergence, reduced training noise, and improved overall stability.
